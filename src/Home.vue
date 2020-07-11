@@ -4,6 +4,7 @@
     <!--    <hr>-->
     <!--    <button @click="changeStatus">Change Status</button>-->
     <my-cmp2 v-for="(i,index) in 5" :key="index"></my-cmp2>
+    <Server-status v-for="(i,index) in 5" :key="index+5"></Server-status>
   </div>
 </template>
 
@@ -24,7 +25,9 @@
     //   },
     // }
     components: {
-      "my-cmp2": ServerStatus,
+      // "my-cmp2": ServerStatus,
+      myCmp2:ServerStatus,
+      ServerStatus,
     }
   }
 </script>
