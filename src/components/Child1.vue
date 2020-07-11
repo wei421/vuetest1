@@ -24,14 +24,14 @@
         this.$emit("btnPress2", this.btnName);
       },
       btnBus() {
-        this.btnName = "hehe1"
-        eventBus.$emit("eventCommit2", this.btnName)
+        this.btnName = "haha"
+        eventBus.$emit("eventCommit", this.btnName)
       },
     },
     created() {
-      eventBus.$on("eventCommit1",(btnNewName)=>{
+      eventBus.$on("eventCommit",(btnNewName)=>{
         this.btnName = btnNewName;
-        console.log("btn2 listened!");
+        console.log("btn1 listened!");
       });
     }
   }
@@ -40,3 +40,4 @@
 <style scoped>
 
 </style>
+
