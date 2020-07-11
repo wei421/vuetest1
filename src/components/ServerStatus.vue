@@ -2,7 +2,7 @@
   <div>
     <p>Server Status: {{ status }}</p>
     <hr>
-    <button @click="changeStatus">Change Status</button>
+    <button @click="changeStatus">Change Status {{ tailfix }}-{{ tailfix1 }}</button>
   </div>
 </template>
 
@@ -19,7 +19,17 @@
         this.statusBool = !this.statusBool;
         this.status = this.statusBool === true ? "Critical" : "Normal";
       },
-    }
+    },
+    props: {
+      tailfix: {
+        type: String,
+        default: "666",
+      },
+      tailfix1: {
+        type: String,
+        default: "777",
+      },
+    },
   }
 </script>
 

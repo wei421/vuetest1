@@ -1,10 +1,11 @@
 <template>
-<!--  <h1>{{ test }}</h1>-->
+  <!--  <h1>{{ test }}</h1>-->
   <div>
-    <my-cmp1></my-cmp1>
+    <!--    <my-cmp1></my-cmp1>-->
+    <my-cmp2></my-cmp2>
   </div>
 
-<!--  <my-cmp1></my-cmp1>-->
+  <!--  <my-cmp1></my-cmp1>-->
 </template>
 
 <script>
